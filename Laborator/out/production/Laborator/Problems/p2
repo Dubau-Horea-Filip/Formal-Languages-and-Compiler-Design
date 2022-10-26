@@ -1,0 +1,9 @@
+start
+number: x,y,z;
+input x;
+input y;
+input z;
+number: sum;
+sum <- 0;
+sum <- x + y + z;
+end

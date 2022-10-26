@@ -1,0 +1,11 @@
+start
+number: x,y;
+number: gcd;
+during ( x != y )
+	situation( x > y)
+		x <- x-y;
+	other y <- y-x;
+end_during
+gcd <- x;
+show gcd;
+end

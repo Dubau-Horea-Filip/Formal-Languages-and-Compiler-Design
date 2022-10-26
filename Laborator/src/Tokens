@@ -1,0 +1,20 @@
+INPUT
+SHOW
+NUMBER
+BOOL
+ARRAY
++
+-
+*
+ /
+ <
+ <=
+ =
+ >=
+START
+END
+DURING
+END_DURING
+SITUATION
+OTHER
+<-
