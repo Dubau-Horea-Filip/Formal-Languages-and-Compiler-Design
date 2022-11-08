@@ -1,0 +1,6 @@
+{ Symbol = x, ST_Pos =( 19, 1) }
+{ Symbol = y, ST_Pos =( 20, 1) }
+{ Symbol = z, ST_Pos =( 21, 1) }
+{ Symbol = sum, ST_Pos =( 38, 1) }
+{ Symbol = 0, ST_Pos =( 48, 1) }
+{ Symbol =  12wef, ST_Pos =( 49, 1) }

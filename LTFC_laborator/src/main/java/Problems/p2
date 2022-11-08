@@ -1,0 +1,13 @@
+START{
+NUMBER:x,y,z;
+INPUT x;
+INPUT y;
+INPUT z; 12wef
+NUMBER:sum;
+sum<-0;
+sum<-x+y+z;
+}END
+
+
+
+
