@@ -1,13 +1,12 @@
- start
- number: x,y,z;
- number: max;
- situation( x > y)
-	situation ( x> z)
-		max <- x;
-	other max <- z;
- other
-  situation ( y>z)
-   	max <- y;
-  other max <- z;
-
-end
+START{
+NUMBER:x,y,z;
+NUMBER:max;
+SITUATION(x > y){
+SITUATION(x > z)
+{max<-x;}
+OTHER{max<-z;}}
+OTHER{
+SITUATION(y > z)
+{max<-y;}
+OTHER{max<-z;}}
+}END

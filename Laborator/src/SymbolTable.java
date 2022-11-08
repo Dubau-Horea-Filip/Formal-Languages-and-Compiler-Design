@@ -2,6 +2,14 @@ class ListNode {
     String val;
     ListNode next;
 
+
+    public String toString(int pos, int pos2) {
+        return
+                "{ Symbol = " + val + ", " +
+                "ST_Pos =( " + pos +", " + pos2+
+                ") }\n";
+    }
+
     ListNode(String x) {
         val = x;
         next = null;
@@ -11,8 +19,29 @@ class ListNode {
 public class SymbolTable {
     //1
 
-
     public ListNode[] values = new ListNode[101];
+    @Override
+    public String toString() {
+        String s = "";
+       for(int i=0;i<101;i++)
+       {
+           if (values[i] == null) {
+              continue;
+           }
+           int pos =1;
+           s += values[i].toString(i,1);
+           ListNode point = values[i];
+           while (point.next != null) {
+               pos++;
+               s += point.toString(i,pos);
+               point = point.next;
+
+           }
+       }
+       return s;
+    }
+
+
 
     public int hashing(String var) {
         int sum = 0;
@@ -45,6 +74,13 @@ public class SymbolTable {
         if (values[location].val.equals(identifier) ) return true;
         return false;
     }
+
+    public int retPos(String identifier)
+    {
+        return  hashing(identifier);
+    }
+
+
 
 
 }
